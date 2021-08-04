@@ -12,10 +12,10 @@ public class NewsService {
     public List<NewsModel> getAllNews(){
 
         List<NewsModel> list=new ArrayList<>();
-        list.add(new NewsModel(1l,"title 1","content 1"));
-        list.add(new NewsModel(2l,"title 2","content 2"));
-        list.add(new NewsModel(3l,"title 3","content 3"));
-        list.add(new NewsModel(4l,"title 4","content 4"));
+        list.add(new NewsModel(1l,"title 1","content 1","koton.pdf","news.jpeg"));
+        list.add(new NewsModel(2l,"title 2","content 2","Test.java","news.jpeg"));
+        list.add(new NewsModel(3l,"title 3","content 3","nohup.out","news.jpeg"));
+
 
         return list;
     }

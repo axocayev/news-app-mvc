@@ -31,6 +31,7 @@
         <tr th:each="news:${newsList}">
             <td th:text="${news.title}">John</td>
             <td th:text="${news.content}">Doe</td>
+            <td th:text="${news.file}">Doe</td>
             <td ><a th:href="@{edit-news(newsId=${news.newsId})}">More info  </a></td>
         </tr>
 

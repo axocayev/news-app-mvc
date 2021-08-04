@@ -30,6 +30,8 @@
         <tr th:each="news:${newsList}">
             <td th:text="${news.title}">John</td>
             <td th:text="${news.content}">Doe</td>
+            <td ><img th:src="@{/file/images/{fileName}(fileName = ${news.image})}"/></td>
+            <td > <a th:href="@{/file/download/{fileName}(fileName = ${news.file})}"><div th:text="${news.file}"></div></a> </td>
             <td ><a th:href="@{/news-details(newsId=${news.newsId})}">More info  </a></td>
         </tr>
 

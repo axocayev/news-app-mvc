@@ -11,5 +11,7 @@ public class NewsModel {
     private Long newsId;
     private String title;
     private String content;
+    private String file;
+    private String image;
 
 }

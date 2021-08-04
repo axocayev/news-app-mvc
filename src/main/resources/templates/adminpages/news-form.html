@@ -18,7 +18,7 @@
     <div th:include="navbar.html"></div>
 
 
-    <form action="#" th:action="@{save-news}" th:object="${news}" method="post">
+    <form action="#" th:action="@{save-news}" th:object="${news}" method="post" enctype="multipart/form-data">
         <input type="hidden" th:field="*{newsId}" />
         <table border="1" class="table">
 
@@ -31,6 +31,10 @@
             <tr>
                 <td>Title</td>
                 <td><textarea th:field="*{content}"></textarea></td>
+            </tr>
+            <tr>
+                <td>File</td>
+                <td><input type="file" name="file" th:field="*{file}"/></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Submit" /></td>
