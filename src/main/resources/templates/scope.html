@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link th:rel="@{/css/mystyle.css}">
+</head>
+<body>
+
+
+
+<div class="container">
+
+     <div th:include="navbar.html"></div>
+
+    Hashcode<h3 th:text="${student}" ></h3>
+    Value <h3 th:text="${value}" ></h3>
+    host <h3 th:text="${host}" ></h3>
+    port <h3 th:text="${port}" ></h3>
+    context_path <h3 th:text="${context_path}" ></h3>
+    servlet path <h3 th:text="${servlet}" ></h3>
+    method  <h3 th:text="${method}" ></h3>
+    query  <h3 th:text="${query}" ></h3>
+    name  <h3 th:text="${name}" ></h3>
+    id  <h3 th:text="${id}" ></h3>
+
+</div>
+
+</body>
+</html>
